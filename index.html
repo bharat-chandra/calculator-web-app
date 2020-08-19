@@ -1,0 +1,55 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <meta name="description" content="simple calculator using html,bootstrap,js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-color:darkslategrey
+            }
+            .row_style{
+                margin-top: 50px;
+            }
+            input{
+                font-weight:900;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row row_style">
+                <div class="panel col-xs-6 panel-danger">
+                    <div class="panel-heading"><h3>Calculator</h3></div>
+                      <div class="panel-body">
+                          <form class="form form-inline" id="myform" name="calc">
+                            <input name="display" class="form-group form-control"><br><br>
+                              <input type="button" value="0" onclick="calc.display.value+='0'" class="form-group form-control">
+                              <input type="button" value="1" onclick="calc.display.value+='1'" class="form-group form-control form-control">
+                              <input type="button" value="2" onclick="calc.display.value+='2'" class="form-group form-control form-control">
+                              <input type="button" value="+" onclick="calc.display.value+='+'" class="form-group form-control form-control"><br>
+                              <input type="button" value="3" onclick="calc.display.value+='3'" class="form-group form-control form-control" style="margin-top:5px">
+                              <input type="button" value="4" onclick="calc.display.value+='4'" class="form-group form-control form-control" style="margin-top:5px">
+                              <input type="button" value="5" onclick="calc.display.value+='5'" class="form-group form-control form-control" style="margin-top:5px">
+                              <input type="button" value="-" onclick="calc.display.value+='-'" class="form-group form-control form-control" style="margin-top:5px"><br>
+                              <input type="button" value="6" onclick="calc.display.value+='6'" class="form-group  form-control" style="margin-top:5px">
+                              <input type="button" value="7" onclick="calc.display.value+='7'" class="form-group form-control form-control" style="margin-top:5px">
+                              <input type="button" value="8" onclick="calc.display.value+='8'" class="form-group form-control" style="margin-top:5px">
+                              <input type="button" value="*" onclick="calc.display.value+='*'" class="form-group form-control" style="margin-top:5px"><br>
+                              <input type="button" value="9" onclick="calc.display.value+='9'" class="form-group form-control" style="margin-top:5px">
+                              <input type="button" value="<=" onclick="calc.display.value+=''" class="form-group form-control" style="margin-top:5px">
+                              <input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)" class="form-group form-control" style="margin-top:5px">
+                              <input type="button" onclick="calc.display.value+='/'" value="&#247" class="form-group form-control" style="margin-top:5px">
+                          </form>
+                      </div>
+                      <div class="panel-footer text-success" style="font-style: italic">
+                          Developed by &copy bharat chandra<br>
+                          email : bharat.chandra200@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
